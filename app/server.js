@@ -1,7 +1,7 @@
 const http = require('http');
 const fs = require("fs");
 const path = require("path");
-
+require('dotenv').config();
 const server = http.createServer((req, res) => {
     //handle routing to index.html as default
     if (req.url === "/") {
